@@ -84,10 +84,12 @@
 .nav-button:hover
 {
     background-color: lightgrey;
+    cursor: pointer;
 }
 .home-banner-container button:hover
 {
     background-color: blue;
+    cursor: pointer;
     
 }
 
@@ -302,6 +304,7 @@ p
 .options a:hover
 {
     color: turquoise;
+    cursor: pointer;
 }
 .options a:active
 {
@@ -354,6 +357,7 @@ p
 .achievements-row-1 img:hover,.achievements-row-2 img:hover
 {
     filter:drop-shadow(0px 10px 10px lightgray);
+    cursor: pointer;
 }
 h3
 {
@@ -443,6 +447,7 @@ footer
 {
     color: black;
     background-color: cornflowerblue;
+    cursor: pointer;
 }
 .insta-feed
 {
@@ -536,6 +541,7 @@ footer
 {
     color: slateblue;
     background-color: white;
+    cursor: pointer;
 }
 .quote-button
 {
@@ -630,6 +636,7 @@ footer
 {
     background-color: blue;
     cursor: pointer;
+    
 }
 
 .nav-button
@@ -644,6 +651,7 @@ footer
 .hire-button:hover .drop-down-menu>*
 {
     display: grid;
+    
 }
 
 @media only screen and (min-width:768px) {
@@ -685,6 +693,7 @@ footer
     #images>*:hover,.quote:hover
     {
         background-color: lightgray;
+        cursor: pointer;
     }
     #images
     {
@@ -738,6 +747,7 @@ footer
     .nav-links #full-bar a:hover
     {
         color: rgb(65, 201, 187);
+        cursor: pointer;
     }
     .top-nav img
     {
@@ -919,6 +929,7 @@ footer
     .options a:hover
     {
         color: turquoise;
+        cursor: pointer;
     }
     .options a:active
     {
@@ -971,6 +982,7 @@ footer
     .achievements-row-1 img:hover,.achievements-row-2 img:hover
     {
         filter:drop-shadow(0px 10px 10px lightgray);
+        cursor: pointer;
     }
     h3
     {
@@ -1146,6 +1158,7 @@ footer
     {
         color: black;
         background-color: cornflowerblue;
+        cursor: pointer;
     }
     .insta-feed
     {

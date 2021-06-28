@@ -842,10 +842,7 @@ footer
         text-align:center;
         text-justify: inter-word;
     }
-    .main-grid .category
-    {
-        margin-left: 5vw;
-    }
+    
     .middle-grid #changed-para
     {
         display: none;
@@ -876,14 +873,14 @@ footer
     .category
     {
         grid-row: 2;
-        max-width: 400px;
+        width: 30vw;
         display: grid;
         height:fit-content;
         column-gap: 30px;
-        grid-column: 2/3;
+        grid-column: 1 / span 3;
         margin-top: 40px;
         justify-content: center;
-        margin-left: 20px;
+        margin-left: 35vw;
     }
     .prod-1
     {
@@ -940,10 +937,11 @@ footer
     .second-grid
     {
         grid-row: 3;
-        grid-column: 1/4;
+        grid-column: 1 / span 3;
         margin-top: 50px;
         text-align:center;
         text-justify: inter-word;
+        text-overflow: clip;
     }
 
     .options
@@ -1035,8 +1033,8 @@ footer
         height: 70vh;
         overflow-wrap: unset;
         grid-row: 6;
-        grid-column: 1/4;
-        width: 100%;
+        grid-column: 1/3;
+        min-width: 100vw;
         z-index: -1;
     }
     .bg-overlay
@@ -1119,8 +1117,8 @@ footer
     {
         background-color: rgb(39, 38, 38);
         display: grid;
-        grid-template-columns: max-content max-content max-content;
-     
+        
+        word-wrap: break-word;
         column-gap: 25px;
     }
 
@@ -1195,7 +1193,7 @@ footer
     {
         grid-row: 1;
         grid-column: 3;
-        margin-left: 50px;
+        overflow-wrap: break-word;
         margin-top: 30px;
     }
     .insta-feed h3

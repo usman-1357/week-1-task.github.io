@@ -27,28 +27,41 @@
 	<nav class="top-nav">
 		<img src="./navhead.png">
 		<div class="nav-links">
-			<label class="nav-button">
-				<i class="fa fa-navicon"></i>
-				<div class="drop-down-menu">
-					<a href="#Home">HOME</a>
-					<a href="#Content">CONTENTS</a>
-				</div>
-			</label>
+			<ul>
+				<li class="nav-button">
+						<i class="fa fa-navicon"></i>
+						<div class="drop-down-menu">
+							<a href="#Home">HOME</a>
+							<a href="#Content">CONTENTS</a>
+							<a href="#Pages">PAGES</a>
+						</div>
+				</li>
+			</ul>
+			
 			<div id="full-bar">
 				<label href="#Home">HOME</label>
 				<label href="#Portfolio">PORTFOLIO</label>
 				<label href="#About">ABOUT</label>
-				<label id="blog" href="#Blog">BLOG
+				<ul>
+					<li id="blog" href="#Blog">BLOG
+						<i class="fa fa-angle-down"></i>
 					<div id="dropdown-content-blog">
 						<a href="#New Blog">NEW BLOG</a>
 						<a href="#Edit Blog">EDIT BLOG</a>
 						<a href="#View Blog">VIEW BLOGS</a>
 					</div>
-				<i class="fa fa-angle-down"></i>
-				</label>	
-				<label href="#Pages">PAGES
-					<i class="fa fa-angle-down"></i>
-				</label>
+					</li>
+				</ul>	
+				<ul>
+					<li id="pages" href="#pages">PAGES
+						<i class="fa fa-angle-down"></i>
+						<div id="dropdown-content-pages">
+							<a href="#Next">NEXT PAGE</a>
+							<a href="#Prev">PREVIOS PAGE</a>
+							<a href="#New">NEW PAGE</a>
+						</div>
+					</li>
+				</ul>
 				<label href="#Content">CONTENT</label>
 			</div>
 		</div>

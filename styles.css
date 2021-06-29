@@ -6,6 +6,10 @@
     font-family: 'Trirong',sans-serif;
 }
 
+body
+{
+    width: 100%;
+}
 .top-nav
 {
     width: 100%;
@@ -15,12 +19,13 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 8vh;
     position: sticky;
     margin-top: 0px;
     top:0;
     z-index: 1;
 }
+
 .top-nav img
 {
     height: inherit;
@@ -43,7 +48,6 @@
     position: relative;
     text-align: left;
     color: white;
-  
 }
 .banner-text
 {
@@ -77,48 +81,55 @@
 .nav-button
 {
     color:darkturquoise;
+    list-style: none;
     background-color: white;
     border: none;
     width: 40px;
     height: 40px;
+    align-content: center;
 }
 .nav-button:hover
 {
-    background-color: lightgrey;
-    cursor: pointer;
+    background-color: lightblue;
+}
+.top-nav .nav-links>ul
+{
+    text-align: center;
 }
 .drop-down-menu
 {
-    display: none;
-    text-decoration: none;
+    display:none;
+    list-style: none;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background-color: white;
+    width: 25%;
 }
 .drop-down-menu a
 {
     text-decoration: none;
     color: black;
-    margin: 10px;
+    display: block;
+    margin-left: 20px;
 }
 .drop-down-menu a:hover
 {
-    text-decoration: none;
     color: turquoise;
 }
 .nav-button:hover .drop-down-menu
 {
     display: block;
-    float: left;
-    padding-right: 20px;
 }
 .home-banner-container button:hover
 {
     background-color: blue;
     cursor: pointer;
-    
 }
 
 .middle-grid,.category
 {
-    grid-column: span 1 !important;
+    grid-column: span 1 ;
     text-overflow: clip;
 }
 
@@ -142,9 +153,8 @@
 }
 
 
-.main-heading
-{
-
+.main-heading {
+    
     font-size: 30px;
     font-weight: lighter;
     font-family:'Trirong',serif;
@@ -157,8 +167,13 @@ p
 }
 .main-grid
 {
+    width: 100%;
     display: grid;
     grid-template-rows: auto auto auto;
+}
+.main-grid img
+{
+    width: 100%;
 }
 .category
 {
@@ -190,7 +205,7 @@ p
 {
     border: solid lightgray 1px;
     justify-content: space-around;
-    margin-top: -9px;
+    
     width: inherit;
 }
 .category img
@@ -206,7 +221,6 @@ p
     word-spacing: 3px;
     line-height: 9px;
     padding-top: 20px;
-    padding-left:20px;
     padding-bottom: 40px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
 }
@@ -214,7 +228,7 @@ p
 {
     border-top: unset;
     border-bottom: unset;
-    padding-left: 20px;
+    
     padding-top: 10px;
     font-size: 15px;
     font-weight: lighter;
@@ -613,23 +627,26 @@ footer
     grid-column: 1;
     position: relative;
     margin-top: 10px;
-    row-gap: 50px;
+    row-gap: 20px;
+    align-items: center;
 }
 .hidden-grid h3
 {
     
     font-weight: lighter;
     font-size: 15px;
-    margin-left: 10px;
+    grid-column: 2;
+    justify-content: center;
+    text-align: center;
 }
 .circle-1,.circle-2,.circle-3,.circle-4
 {
-    grid-column: 2;
+    grid-column: 1/span 2;
 }
 .hidden-grid img
 {
-    grid-column: span 2 !important;
-    margin-left: -200px;
+    grid-column: span 2 ;
+    text-align: center;
 }
 .outer-circle
 {
@@ -675,7 +692,7 @@ footer
 
 .nav-button
 {
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -749,19 +766,54 @@ footer
         flex-flow: column;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        margin-right: 100px;
         height: 200px;
+        top:10%;
         list-style:none;
-        padding-top:40px;
         z-index: 1;
         grid-row: 1;
     }
-    /* #full-bar #blog:hover #dropdown-content-blog
+    #full-bar #blog
     {
-        display: grid !important;
-        position: static;
-        z-index: -1;
-    } */
+        list-style: none;
+    }
+    #full-bar #blog:hover
+    {
+        color: turquoise;
+        cursor: pointer;
+    }
+    #full-bar #blog:hover #dropdown-content-blog
+    {
+        display: grid;
+        position: fixed;
+        z-index: 2;
+    }
+    #pages
+    {
+        list-style: none;
+    }
+    #pages #dropdown-content-pages
+    {
+        display: none;
+        background-color: #f9f9f9;
+        flex-flow: column;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        height: 25vh;
+        top:50px;
+        list-style:none;
+        z-index: 1;
+        grid-row: 1;
+    }
+    #pages:hover
+    {
+        color: turquoise;
+        cursor: pointer;
+    }
+    #pages:hover #dropdown-content-pages
+    {
+        display: grid;
+        position: fixed;
+    }
     .top-nav label:hover
     {
         color: turquoise;
